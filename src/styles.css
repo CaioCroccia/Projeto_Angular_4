@@ -6,6 +6,14 @@ h1{
   text-align: center;
   margin-top: 1em;
 }
+h2{
+  color: white;
+  font-family: 'Poppins';
+  font-style: bold;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 1em;
+}
 p{
   color: white;
   font-family: 'Poppins';
@@ -20,4 +28,13 @@ nav{
 body{
   background-color: rgb(214, 191, 86);
   box-sizing: border-box;
+}
+
+div{
+  text-align: center;
+}
+
+table{
+  border:1px solid rgb(213, 248, 213);
+  color: aliceblue;
 }
