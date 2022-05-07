@@ -35,9 +35,7 @@ export class BitcoinService {
     if (!this.temporizador) {
       this.temporizador = setInterval(() => {
         this.http
-          .get<Response>(
-            'https://api.coindesk.com/v1/bpi/currentprice/BRL.json'
-          )
+          .get<Response>('https://api.coindesk.com/v1/bpi/currentprice/BRL.json')
           .subscribe((data) => {
             if (data.bpi.USD.rate_float == this.current.bpi.USD.rate_float) {
             } else {
