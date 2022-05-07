@@ -7,4 +7,10 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   name = 'HttpClient Demo' + VERSION.major;
+
+  constructor(public bitcoinService: BitcoinService) {}
+
+  ngOnInit() {
+    this.bitcoinService.update();
+  }
 }
